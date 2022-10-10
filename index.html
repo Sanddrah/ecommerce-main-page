@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="maincontainer" class="container">
+      <div id="mySidebar" class="sidebar">
+        <img
+          onclick="closeNav()"
+          id="toggleClose"
+          src="images/icon-close.svg"
+          alt=""
+        />
+        <a href="">Collections</a>
+        <a href="">Men</a>
+        <a href="">Women</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </div>
+
+      <div id="mainbar">
+        <div class="topnav">
+          <div style="display: flex">
+            <img id="toggleOpen" src="images/icon-menu.svg" alt="" />
+            <img id="logo" src="images/logo.svg" alt="" />
+
+            <nav class="web-nav">
+              <a href="">Collections</a>
+              <a href="">Men</a>
+              <a href="">Women</a>
+              <a href="">About</a>
+              <a href="">Contact</a>
+            </nav>
+          </div>
+
+          <div class="avatar">
+            <img src="images/icon-cart.svg" alt="" />
+            <div class="cartAmount">0</div>
+
+            <img
+              class="photo"
+              width="30px"
+              src="images/image-avatar.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="bodyflex-container">
+        <div class="products">
+          <div class="imagecon">
+            <img
+              id="shoe1"
+              class="image1"
+              src="images/image-product-1.jpg"
+              alt=""
+            />
+            <div class="thumbnail">
+              <img
+                class="thumbnail-images"
+                src="images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+              <img
+                class="thumbnail-images"
+                src="images/image-product-2-thumbnail.jpg"
+                alt=""
+              />
+              <img
+                class="thumbnail-images"
+                src="images/image-product-3-thumbnail.jpg"
+                alt=""
+              />
+              <img
+                class="thumbnail-images"
+                src="images/image-product-4-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <img
+            id="prevtoggle"
+            class="previous"
+            src="images/icon-previous.svg"
+            alt=""
+          />
+          <img id="nexttoggle" class="next" src="images/icon-next.svg" alt="" />
+        </div>
+
+        <div class="action-section">
+          <div class="bodysection">
+            <p class="sneakercom">Sneaker Company</p>
+
+            <h3 class="heading">Fall Limited Edition Sneakers</h3>
+
+            <p class="paragraph">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex-container">
+              <div class="current-price">
+                <h3 class="price">$125.00</h3>
+                <h3><span class="fiftypercent">50%</span></h3>
+              </div>
+              <h4 class="priceslash">$250.00</h4>
+            </div>
+            <div class="buttondiv">
+              <div>
+                <button class="operatorbtn">
+                  <img
+                    id="minus"
+                    class="operator add"
+                    src="images/icon-minus.svg"
+                    alt=""
+                  /><span id="numzero" class="zero">0</span>
+                  <img
+                    id="plus"
+                    class="operator subtract"
+                    src="images/icon-plus.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+
+              <div>
+                <button class="addtocart">
+                  <img
+                    class="addtocartimg"
+                    src="images/icon-cart.svg"
+                    alt=""
+                  />Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="sandy.js"></script>
+  </body>
+</html>

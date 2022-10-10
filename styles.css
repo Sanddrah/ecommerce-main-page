@@ -1,0 +1,342 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  min-width: 100%;
+  margin: 0px auto;
+}
+
+.imagecon {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.previous {
+  position: absolute;
+  bottom: 200px;
+  left: 40px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+
+.next {
+  position: absolute;
+  right: 40px;
+  bottom: 200px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+
+.image1 {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.addtocart,
+.operatorbtn {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.operatorbtn {
+  padding: 18px;
+}
+
+.addtocart {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(26, 100%, 55%);
+}
+
+.operator {
+  margin: auto 50px;
+}
+
+.addtocartimg {
+  margin-right: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fiftypercent {
+  color: hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
+}
+
+.priceslash {
+  text-decoration: line-through;
+  margin-right: 20px;
+}
+
+.sneakercom {
+  color: hsl(26, 100%, 55%);
+  font-weight: bolder;
+}
+
+.bodysection {
+  margin: 10px 10px;
+}
+
+.paragraph,
+.priceslash {
+  color: hsl(219, 9%, 45%);
+}
+
+/* sidebar mobileview */
+.sidebar {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0;
+  z-index: 1;
+  background-color: hsl(0, 0%, 100%);
+  padding-top: 60px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+  color: hsl(0, 0%, 0%);
+}
+
+.sidebar a:hover {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  transition: 0.4s;
+}
+
+#toggleClose {
+  margin-left: 150px;
+  margin-bottom: 10px;
+}
+
+#toggleOpen,
+#logo {
+  margin: 10px 10px;
+}
+
+.previous {
+  padding: 10px;
+}
+
+.next {
+  padding: 10px;
+}
+
+.web-nav {
+  display: none;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+  }
+hr{
+    display: none;
+}
+
+.thumbnail{
+    display: none ;
+}
+
+.photo{
+    margin: auto 20px;
+  }
+
+  .current-price{
+    display: flex;
+   margin: auto 20px;
+}
+
+
+.avatar{
+  position: relative;
+}
+
+.cartAmount{
+  position: absolute;
+  top: -1px;
+  left: 12px;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  padding: 3px;
+  font-size: 10px;
+  border-radius: 3px;
+}
+
+/* LARGE SCREEN */
+@media (min-width: 768px) {
+  .bodyflex-container {
+    display: flex;
+    /* text-align: left; */
+    padding: 60px;
+  }
+
+    .avatar{
+      position: relative;
+    }
+
+    .cartAmount{
+      position: absolute;
+      top: -1px;
+      left: 12px;
+      background-color: hsl(26, 100%, 55%);
+      color: white;
+      padding: 3px;
+      font-size: 10px;
+      border-radius: 3px;
+    }
+
+  .thumbnail{
+    display: block;
+    width: 100%;
+  }
+
+  .thumbnail-images{
+    width: 90px;
+    margin: 28px;
+    margin-left: 0;
+
+  }
+
+  .zero{
+    font-size: 20px;
+}
+
+  .thumbnail-images, .image1{
+    border-radius: 8px;
+  }
+
+  .buttondiv{
+    display: flex;
+  }
+
+  .operatorbtn{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    margin: 0px 0px;
+  }
+
+  .bodysection{
+    margin-left: 0px;
+    margin-top: 0px;
+   
+    
+  }
+
+  .operator{
+    margin: auto 30px;
+    padding: 10px;
+  }
+
+  .addtocart{
+    width: 100%;
+    margin: auto 100px;
+    padding: 20px 10px;
+  }
+
+ .paragraph{
+    width: 70%;
+    line-height: 1.5;
+
+}
+
+.fiftypercent{
+    margin-left: 20px;
+}
+
+.current-price{
+    display: flex;
+    margin-left: 0;
+}
+
+.flex-container{
+    display: block;
+ 
+}
+
+
+.sneakercom{
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.heading{
+    font-size: 50px;
+    margin: 0;
+}
+
+.previous, .next{
+    display: none;
+}
+
+  .image1{
+    width: 80%;
+    margin-right: 0px;
+    
+  }
+
+  #toggleOpen {
+    display: none;
+  }
+
+  #toggleClose {
+    display: none;
+  }
+
+  .action-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+  }
+
+  .web-nav {
+    display: flex;
+  }
+
+  .web-nav a {
+    margin: auto 20px;
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+    font-weight: bold;
+  }
+
+  .web-nav a:hover{
+    border-bottom: 2px solid hsl(26, 100%, 55%);
+    
+  }
+
+  hr{
+    display: block;
+  }
+}
